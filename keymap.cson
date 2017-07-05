@@ -43,6 +43,7 @@
   'alt-{': 'pane:move-item-left'
   'alt-}': 'pane:move-item-right'
 
+  # Git
   'cmd-shift-g': 'git-plus:menu'
 
   # Window management commands
@@ -71,6 +72,9 @@
   'ctrl-f2': 'unset!'
 
 
+'platform-darwin':
+  'cmd-t': 'unset!'
+  'cmd-shift-t': 'unset!'
 
 'atom-text-editor':
   'ctrl-j': 'editor:newline'
@@ -86,8 +90,12 @@
   'cmd-shift-g': 'unset!'
 
 'atom-workspace':
-  'cmd-shift-t': 'platformio-ide-terminal:toggle'
-  'cmd-t': 'platformio-ide-terminal:focus'
+  # 'cmd-shift-t': 'platformio-ide-terminal:toggle'
+  # 'cmd-t': 'platformio-ide-terminal:focus'
+
+  # Unset commands
+  'cmd-enter': 'unset!'
+  'cmd-shift-enter': 'unset!'
 
 'atom-text-editor[mini]':
   'j k': 'core:cancel'

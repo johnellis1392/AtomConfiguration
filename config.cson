@@ -8,6 +8,7 @@
       beautify_on_save: true
     general:
       _analyticsUserId: "ff75f22d-0f11-44e0-bfa4-f099e50c4c45"
+      loggerLevel: "verbose"
     go:
       beautify_on_save: true
     haskell:
@@ -15,6 +16,7 @@
     js:
       beautify_on_save: true
       brace_style: "collapse-preserve-inline"
+      break_chained_methods: true
       end_with_comma: true
       end_with_newline: true
       jslint_happy: true
@@ -49,6 +51,7 @@
   "go-plus":
     panel: {}
   "linter-ui-default":
+    panelHeight: 69
     showPanel: true
   "platformio-ide-terminal":
     core:
@@ -76,3 +79,6 @@
   editor:
     showInvisibles: false
     tabLength: 2
+".text.todo":
+  editor:
+    autoIndent: false
