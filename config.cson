@@ -11,19 +11,21 @@
       loggerLevel: "verbose"
     go:
       beautify_on_save: true
+    handlebars:
+      beautify_on_save: true
     haskell:
+      beautify_on_save: true
+    html:
       beautify_on_save: true
     js:
       beautify_on_save: true
       brace_style: "collapse-preserve-inline"
-      break_chained_methods: true
       end_with_comma: true
       end_with_newline: true
       jslint_happy: true
-      keep_array_indentation: true
-      keep_function_indentation: true
       space_after_anon_function: true
-    json: {}
+    json:
+      beautify_on_save: true
     rust:
       beautify_on_save: true
     yaml:
@@ -32,6 +34,7 @@
   core:
     disabledPackages: [
       "platformio-ide-terminal"
+      "language-javascript-jsx"
     ]
     telemetryConsent: "limited"
   "easy-motion-redux":
