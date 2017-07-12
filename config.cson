@@ -17,6 +17,7 @@
       beautify_on_save: true
     html:
       beautify_on_save: true
+      end_with_newline: true
     js:
       beautify_on_save: true
       brace_style: "collapse-preserve-inline"
