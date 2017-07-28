@@ -55,8 +55,7 @@
   "go-plus":
     panel: {}
   "linter-ui-default":
-    panelHeight: 69
-    showPanel: true
+    panelHeight: 236
   "platformio-ide-terminal":
     core:
       mapTerminalsTo: "Folder"
