@@ -27,6 +27,9 @@
       space_after_anon_function: true
     json:
       beautify_on_save: true
+    ruby:
+      beautify_on_save: true
+      indent_size: 2
     rust:
       beautify_on_save: true
     yaml:
@@ -41,6 +44,7 @@
   "easy-motion-redux":
     replaceCharacters: "ABCDEFGHIKLMNOPQRSTUVWXYZ"
   editor:
+    fontSize: 13
     tabLength: 4
   "exception-reporting":
     userId: "fcfc173e-a63a-4748-9980-b7be814d4740"
@@ -75,6 +79,9 @@
 ".js.source":
   editor:
     showInvisibles: false
+".ruby.source":
+  editor:
+    tabLength: 2
 ".scala.source":
   editor:
     tabLength: 2
