@@ -6,3 +6,5 @@ storage
 .node-gyp
 .npm
 split-diff/
+recovery/
+

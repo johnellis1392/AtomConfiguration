@@ -89,6 +89,14 @@
   'alt-h': 'unset!'
   'cmd-shift-g': 'unset!'
 
+# 'atom-text-editor:not(.mini).vim-mode-plus:not(.insert-mode):not(.jumpy-jump-mode)':
+#     'alt-e': 'jumpy:toggle'
+#
+# 'atom-workspace atom-text-editor.jumpy-jump-mode':
+#     # 'alt-e': 'jumpy:clear'
+#     'ctrl-[': 'jumpy:clear'
+#     'escape': 'jumpy:clear'
+
 'atom-workspace':
   # 'cmd-shift-t': 'platformio-ide-terminal:toggle'
   # 'cmd-t': 'platformio-ide-terminal:focus'

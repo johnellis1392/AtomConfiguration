@@ -18,6 +18,8 @@
     html:
       beautify_on_save: true
       end_with_newline: true
+    java:
+      configPath: "/Users/johnellis/.atom/package-configs/atom-beautify/uncrustify.cfg"
     js:
       beautify_on_save: true
       brace_style: "collapse-preserve-inline"
@@ -27,20 +29,41 @@
       space_after_anon_function: true
     json:
       beautify_on_save: true
+    ruby:
+      beautify_on_save: true
+      indent_size: 2
     rust:
       beautify_on_save: true
+    xml:
+      beautify_on_save: true
+      end_with_newline: true
+      indent_size: 2
+      wrap_attributes_indent_size: 2
+      wrap_line_length: 100
     yaml:
       disabled: true
   "autocomplete-xml": {}
   core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    closeEmptyWindows: false
+    destroyEmptyPanes: false
     disabledPackages: [
       "platformio-ide-terminal"
       "language-javascript-jsx"
+      "jumpy"
     ]
     telemetryConsent: "limited"
   "easy-motion-redux":
     replaceCharacters: "ABCDEFGHIKLMNOPQRSTUVWXYZ"
   editor:
+    fontSize: 13
+    invisibles:
+      cr: " "
+      eol: " "
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
     tabLength: 4
   "exception-reporting":
     userId: "fcfc173e-a63a-4748-9980-b7be814d4740"
@@ -55,7 +78,8 @@
   "go-plus":
     panel: {}
   "linter-ui-default":
-    panelHeight: 236
+    panelHeight: 304
+    showPanel: true
   "platformio-ide-terminal":
     core:
       mapTerminalsTo: "Folder"
@@ -75,6 +99,9 @@
 ".js.source":
   editor:
     showInvisibles: false
+".ruby.source":
+  editor:
+    tabLength: 2
 ".scala.source":
   editor:
     tabLength: 2
