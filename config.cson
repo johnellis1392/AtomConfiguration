@@ -4,6 +4,11 @@
       beautify_on_save: true
     c:
       beautify_on_save: true
+    css:
+      beautify_on_save: true
+      end_with_newline: true
+      indent_size: 2
+      preserve_newlines: true
     erlang:
       beautify_on_save: true
     general:
@@ -13,11 +18,15 @@
       beautify_on_save: true
     handlebars:
       beautify_on_save: true
+      end_with_newline: true
+      indent_inner_html: true
+      indent_size: 2
     haskell:
       beautify_on_save: true
     html:
       beautify_on_save: true
       end_with_newline: true
+      indent_inner_html: true
     java:
       configPath: "/Users/johnellis/.atom/package-configs/atom-beautify/uncrustify.cfg"
     js:
@@ -29,11 +38,23 @@
       space_after_anon_function: true
     json:
       beautify_on_save: true
+    mustache:
+      beautify_on_save: true
+      end_with_newline: true
+      indent_inner_html: true
+      indent_size: 2
     ruby:
       beautify_on_save: true
       indent_size: 2
     rust:
       beautify_on_save: true
+    sass:
+      beautify_on_save: true
+    scss:
+      beautify_on_save: true
+      force_indentation: true
+      indent_size: 2
+      preserve_newlines: true
     xml:
       beautify_on_save: true
       end_with_newline: true
@@ -57,7 +78,7 @@
   "easy-motion-redux":
     replaceCharacters: "ABCDEFGHIKLMNOPQRSTUVWXYZ"
   editor:
-    fontSize: 13
+    fontSize: 12
     invisibles:
       cr: " "
       eol: " "
@@ -78,7 +99,7 @@
   "go-plus":
     panel: {}
   "linter-ui-default":
-    panelHeight: 304
+    panelHeight: 236
     showPanel: true
   "platformio-ide-terminal":
     core:
@@ -96,10 +117,19 @@
     autoReveal: true
   "vim-mode-plus-ex-mode":
     notifiedUseExMode: true
+".css.scss.source":
+  editor:
+    tabLength: 2
+".html.mustache.text":
+  editor:
+    tabLength: 2
 ".js.source":
   editor:
-    showInvisibles: false
+    showInvisibles: true
 ".ruby.source":
+  editor:
+    tabLength: 2
+".sass.source":
   editor:
     tabLength: 2
 ".scala.source":
