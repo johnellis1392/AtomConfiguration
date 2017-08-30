@@ -17,7 +17,6 @@
         path: "/usr/local/bin/uncrustify"
     general:
       _analyticsUserId: "ff75f22d-0f11-44e0-bfa4-f099e50c4c45"
-      loggerLevel: "debug"
     go:
       beautify_on_save: true
     handlebars:
@@ -48,6 +47,9 @@
       end_with_newline: true
       indent_inner_html: true
       indent_size: 2
+    python:
+      beautify_on_save: true
+      sort_imports: true
     ruby:
       beautify_on_save: true
       indent_size: 2
@@ -103,8 +105,11 @@
       splitPane: "Right"
   "go-plus":
     panel: {}
+  "linter-eslint":
+    eslintrcPath: "~/.atom/package-configs/linter-eslint/.eslintrc.yml"
+    fixOnSave: true
+    useGlobalEslint: true
   "linter-ui-default":
-    panelHeight: 304
     showPanel: true
   "platformio-ide-terminal":
     core:

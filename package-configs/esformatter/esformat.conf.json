@@ -1,0 +1,61 @@
+{
+  "plugins": ["esformatter-jsx"],
+
+  "jsx": {
+    "formatJSXExpressions": true,
+    "JSXExpressionsSingleLine": true,
+    "formatJSX": false,
+    "attrsOnSameLineAsTag": true,
+    "maxAttrsOnTag": 5,
+    "firstAttributeOnSameLine": true,
+    "spaceInJSXExpressionContainers": " ",
+    "alignWithFirstAttribute": true,
+    "htmlOptions": {
+      "brace_style": "collapse",
+      "indent_char": "\t",
+      "indent_size": 1,
+      "max_preserve_newlines": 2,
+      "preserve_newlines": true,
+      "wrap_line_length": 500
+    }
+  },
+  "indent": {
+    "value": "\t",
+    "FunctionExpression": 1,
+    "ArrayExpression": 1,
+    "ObjectExpression": 1
+  },
+  "whiteSpace": {
+    "before": {
+      "FunctionExpressionOpeningBrace": 1,
+      "FunctionExpressionClosingBrace": 1
+    },
+    "after": {
+      "FunctionExpressionOpeningBrace": 1,
+      "FunctionExpressionClosingBrace": -1
+    }
+  },
+  "lineBreak": {
+    "before": {
+      "ArrayExpressionClosing": 1
+    },
+    "after": {
+      "ArrayExpressionOpening": 1,
+      "ArrayExpressionComma": 1
+    }
+  },
+  "collapseObjects": {
+    "ObjectExpression": {
+      "maxLineLength": 80,
+      "maxKeys": 3,
+      "maxDepth": 2,
+      "forbidden": ["FunctionExpression"]
+    },
+    "ArrayExpression": {
+      "maxLineLength": 80,
+      "maxKeys": 3,
+      "maxDepth": 2,
+      "forbidden": ["FunctionExpression"]
+    }
+  }
+}
