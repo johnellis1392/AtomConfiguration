@@ -4,6 +4,7 @@
       beautify_on_save: true
     c:
       beautify_on_save: true
+      configPath: "~/.atom/package-configs/atom-beautify/uncrustify.conf"
     css:
       beautify_on_save: true
       end_with_newline: true
@@ -11,6 +12,9 @@
       preserve_newlines: true
     erlang:
       beautify_on_save: true
+    executables:
+      uncrustify:
+        path: "/usr/local/bin/uncrustify"
     general:
       _analyticsUserId: "ff75f22d-0f11-44e0-bfa4-f099e50c4c45"
       loggerLevel: "verbose"
@@ -28,7 +32,8 @@
       end_with_newline: true
       indent_inner_html: true
     java:
-      configPath: "/Users/johnellis/.atom/package-configs/atom-beautify/uncrustify.cfg"
+      beautify_on_save: true
+      configPath: "~/.atom/package-configs/atom-beautify/uncrustify.conf"
     js:
       beautify_on_save: true
       brace_style: "collapse-preserve-inline"
@@ -99,7 +104,7 @@
   "go-plus":
     panel: {}
   "linter-ui-default":
-    panelHeight: 236
+    panelHeight: 304
     showPanel: true
   "platformio-ide-terminal":
     core:
@@ -126,6 +131,14 @@
 ".js.source":
   editor:
     showInvisibles: true
+".java.source":
+  editor:
+    showInvisibles: true
+    tabLength: 2
+".c.source":
+  editor:
+    showInvisibles: true
+    tabLength: 2
 ".ruby.source":
   editor:
     tabLength: 2
