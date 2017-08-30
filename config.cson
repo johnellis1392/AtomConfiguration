@@ -17,7 +17,7 @@
         path: "/usr/local/bin/uncrustify"
     general:
       _analyticsUserId: "ff75f22d-0f11-44e0-bfa4-f099e50c4c45"
-      loggerLevel: "verbose"
+      loggerLevel: "debug"
     go:
       beautify_on_save: true
     handlebars:
@@ -122,23 +122,23 @@
     autoReveal: true
   "vim-mode-plus-ex-mode":
     notifiedUseExMode: true
+".c.source":
+  editor:
+    showInvisibles: true
+    tabLength: 2
 ".css.scss.source":
   editor:
     tabLength: 2
 ".html.mustache.text":
   editor:
     tabLength: 2
-".js.source":
-  editor:
-    showInvisibles: true
 ".java.source":
   editor:
     showInvisibles: true
     tabLength: 2
-".c.source":
+".js.source":
   editor:
     showInvisibles: true
-    tabLength: 2
 ".ruby.source":
   editor:
     tabLength: 2
