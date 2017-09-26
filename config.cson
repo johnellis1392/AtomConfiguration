@@ -75,6 +75,10 @@
     allowPendingPaneItems: false
     audioBeep: false
     closeEmptyWindows: false
+    customFileTypes:
+      "text.ignore": [
+        ".dockerignore"
+      ]
     destroyEmptyPanes: false
     disabledPackages: [
       "platformio-ide-terminal"
@@ -110,6 +114,7 @@
     fixOnSave: true
     useGlobalEslint: true
   "linter-ui-default":
+    panelHeight: 236
     showPanel: true
   "platformio-ide-terminal":
     core:
