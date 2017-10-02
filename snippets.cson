@@ -25,3 +25,12 @@
 #     'something':
 #         'prefix': 'something'
 #         'body': 'fn something(${1:"arg1"}) { println!("${2:"string"}"); }'
+
+'.text.tex.latex':
+    'Screenplay Dialogue Block':
+        'prefix': 'dialogue'
+        'body': """
+        \\\\begin{dialogue}{${1:character}}
+            ${2:body}
+        \\\\end{dialogue}
+        """

@@ -85,6 +85,9 @@
   'alt-e': 'easy-motion-redux:words'
   'alt-b': 'git-blame:toggle'
 
+  'cmd-[': 'editor:fold-current-row'
+  'cmd-]': 'editor:unfold-current-row'
+
   # Remove conflicting commands
   'alt-h': 'unset!'
   'cmd-shift-g': 'unset!'
@@ -104,6 +107,10 @@
   # Unset commands
   'cmd-enter': 'unset!'
   'cmd-shift-enter': 'unset!'
+
+'atom-workspace atom-text-editor:not([mini])':
+  'alt-_': 'editor:fold-all'
+  'alt-+': 'editor:unfold-all'
 
 'atom-text-editor[mini]':
   'j k': 'core:cancel'
