@@ -117,7 +117,7 @@
     fixOnSave: true
     useGlobalEslint: true
   "linter-ui-default":
-    panelHeight: 185
+    panelHeight: 236
     showPanel: true
   "platformio-ide-terminal":
     core:
