@@ -21,6 +21,12 @@
         'prefix': 'itp'
         'body': """it("${1:description}")"""
 
+    'Debugger statement':
+        'prefix': 'de'
+        'body': """
+        debugger // eslint-disable-line
+        """
+
 # '.source.rust':
 #     'something':
 #         'prefix': 'something'

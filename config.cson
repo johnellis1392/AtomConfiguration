@@ -61,7 +61,6 @@
     sass:
       beautify_on_save: true
     scss:
-      beautify_on_save: true
       force_indentation: true
       indent_size: 2
       preserve_newlines: true
@@ -92,7 +91,7 @@
   "easy-motion-redux":
     replaceCharacters: "ABCDEFGHIKLMNOPQRSTUVWXYZ"
   editor:
-    fontSize: 10
+    fontSize: 12
     invisibles:
       cr: " "
       eol: " "
@@ -117,7 +116,7 @@
     fixOnSave: true
     useGlobalEslint: true
   "linter-ui-default":
-    panelHeight: 236
+    panelHeight: 185
     showPanel: true
   "platformio-ide-terminal":
     core:
@@ -134,6 +133,8 @@
     alwaysOpenExisting: true
     autoReveal: true
     hideVcsIgnoredFiles: false
+  "vim-mode-plus":
+    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
   "vim-mode-plus-ex-mode":
     notifiedUseExMode: true
 ".c.source":
