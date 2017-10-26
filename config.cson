@@ -5,6 +5,9 @@
     c:
       beautify_on_save: true
       configPath: "~/.atom/package-configs/atom-beautify/uncrustify.conf"
+    cpp:
+      beautify_on_save: true
+      configPath: "~/.atom/package-configs/atom-beautify/uncrustify.conf"
     css:
       beautify_on_save: true
       end_with_newline: true
@@ -20,7 +23,6 @@
     go:
       beautify_on_save: true
     handlebars:
-      beautify_on_save: true
       end_with_newline: true
       indent_inner_html: true
       indent_size: 2
@@ -42,8 +44,9 @@
       space_after_anon_function: true
     json:
       beautify_on_save: true
+    latex:
+      always_look_for_split_brackets: true
     mustache:
-      beautify_on_save: true
       end_with_newline: true
       indent_inner_html: true
       indent_size: 2
@@ -58,7 +61,6 @@
     sass:
       beautify_on_save: true
     scss:
-      beautify_on_save: true
       force_indentation: true
       indent_size: 2
       preserve_newlines: true
@@ -114,7 +116,7 @@
     fixOnSave: true
     useGlobalEslint: true
   "linter-ui-default":
-    panelHeight: 236
+    panelHeight: 185
     showPanel: true
   "platformio-ide-terminal":
     core:
@@ -130,6 +132,7 @@
   "tree-view":
     alwaysOpenExisting: true
     autoReveal: true
+    hideVcsIgnoredFiles: false
   "vim-mode-plus":
     notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
   "vim-mode-plus-ex-mode":
@@ -137,6 +140,9 @@
 ".c.source":
   editor:
     showInvisibles: true
+    tabLength: 2
+".cpp.source":
+  editor:
     tabLength: 2
 ".css.scss.source":
   editor:
