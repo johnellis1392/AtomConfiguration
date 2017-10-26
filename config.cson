@@ -130,6 +130,8 @@
   "tree-view":
     alwaysOpenExisting: true
     autoReveal: true
+  "vim-mode-plus":
+    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
   "vim-mode-plus-ex-mode":
     notifiedUseExMode: true
 ".c.source":
