@@ -1,37 +1,419 @@
-# File containing custom snippets
+# ############################### #
+# File containing custom snippets #
+# ############################### #
 
+
+
+# ################### #
+# Javascript Snippets #
 '.source.js':
-    'ES6 function syntax':
-        'prefix': 'fes6'
-        'body': """
-        (${1:args}) => {
-            ${2:body}
+
+    # ############# #
+    # Miscellaneous #
+    'Pending Test':
+        'prefix': 'itpending'
+        'body': """it("${1:description}")"""
+
+    # ############# #
+    # ############# #
+
+
+
+    # ############## #
+    # ES6 Statements #
+    'ES6 Function Variable':
+        'prefix': 'constfunction'
+        'body': """const ${1:name} = (${2:/* args */}) => {
+          ${3:// Body}
         }
         """
 
+    'ES6 function syntax':
+        'prefix': 'fes6'
+        'body': """
+        (${1:args}) => ${2:body}
+        """
+
     'Blank ES6 test':
-        'prefix': 'its'
+        'prefix': 'ittest'
         'body': """
         it("${1:description}", () => {
             ${2:body}
         })
         """
 
-    'Pending Test':
-        'prefix': 'itp'
-        'body': """it("${1:description}")"""
+    'ES6 Class Constructor':
+        'prefix': 'constructores6'
+        'body': """
+        constructor() {
+          super()
+          ${1:// TODO}
+        }
+        """
 
-    'Debugger statement':
+    'ES6 Import Statement':
+        'prefix': 'importes6'
+        'body': """
+        import ${1:moduleName} from "${2:${1:moduleName}}"
+        ${3}
+        """
+
+    # ############## #
+    # ############## #
+
+
+
+    # ######################### #
+    # ESLint-enabled Statements #
+    'ESLint-enabled Debugger statement':
+        'prefix': 'debugger'
+        'body': """
+        debugger // eslint-disable-line
+        """
+
+    'ESLint-enabled Debugger statement (overrides native debugger)':
         'prefix': 'de'
         'body': """
         debugger // eslint-disable-line
         """
+
+    'ESLint-disable-line Directive':
+        'prefix': 'eslintdisableline'
+        'body': """ // eslint-disable-line
+        """
+
+
+    # ESLint-enabled Console Statements
+    'ESLint-enabled console.log Statement':
+        'prefix': 'consolelogeslint'
+        'body': """
+        console.log(${1:/* TODO */}) // eslint-disable-line
+        ${2:}
+        """
+
+    'ESLint-enabled console.warn Statement':
+        'prefix': 'consolewarneslint'
+        'body': """
+        console.warn(${1:/* TODO */}) // eslint-disable-line
+        ${2:}
+        """
+
+    'ESLint-enabled console.error Statement':
+        'prefix': 'consoleerroreslint'
+        'body': """
+        console.error(${1:/* TODO */}) // eslint-disable-line
+        ${2:}
+        """
+
+    'ESLint-enabled console.clear Statement':
+        'prefix': 'consolecleareslint'
+        'body': """
+        console.clear() // eslint-disable-line
+        ${1:}
+        """
+
+    # ######################### #
+    # ######################### #
+
+
+
+    # ########################################### #
+    # React / Redux / React-Router Class Snippets #
+    'React Class':
+        'prefix': 'reactclass'
+        'body': """
+        import React, { Component } from "react"
+        import PropTypes from "prop-types"
+
+        import styles from "./${1:className}.scss"
+
+
+
+        /**
+         * ${1:className}
+         */
+        export class ${1:className} extends Component {
+          constructor() {
+            super()
+            this.state = {}
+          }
+
+          static propTypes = {
+            // TODO
+          }
+
+          static defaultProps = {}
+
+
+          render() {
+            const props = {
+              className: styles.container,
+            }
+
+            return (
+              <div {...props}>
+                ${2:body}
+              </div>
+            )
+          }
+        }
+
+
+        export default ${1:className}
+        """
+
+    'React-Router Class':
+        'prefix': 'reactrouterclass'
+        'body': """
+        import React, { Component } from "react"
+        import PropTypes from "prop-types"
+        import { withRouter } from "react-router-dom"
+
+        import styles from "./${1:className}.scss"
+
+
+
+        /**
+         * ${1:className}
+         */
+        export class ${1:className} extends Component {
+          constructor() {
+            super()
+            this.state = {}
+          }
+
+          static propTypes = {
+            // TODO
+
+
+            // Router Props
+            history: PropTypes.shape({
+              go: PropTypes.func.isRequired,
+              goBack: PropTypes.func.isRequired,
+              goForward: PropTypes.func.isRequired,
+              push: PropTypes.func.isRequired,
+              replace: PropTypes.func.isRequired,
+            }).isRequired,
+
+            match: PropTypes.shape({
+              isExact: PropTypes.bool.isRequired,
+              params: PropTypes.shape({}).isRequired,
+              path: PropTypes.string.isRequired,
+              url: PropTypes.string.isRequired,
+            }).isRequired,
+
+            location: PropTypes.shape({
+              hash: PropTypes.string.isRequired,
+              pathname: PropTypes.string.isRequired,
+              search: PropTypes.string.isRequired,
+              state: PropTypes.any,
+            }).isRequired,
+          }
+
+          static defaultProps = {}
+
+
+          render() {
+            const props = {
+              className: styles.container,
+            }
+
+            return (
+              <div {...props}>
+                ${2:body}
+              </div>
+            )
+          }
+        }
+
+
+        export default withRouter(${1:className})
+        """
+
+    'React-Redux Class':
+        'prefix': 'reactreduxclass'
+        'body': """
+        import React, { Component } from "react"
+        import PropTypes from "prop-types"
+        import { connect } from "react-redux"
+        import { bindActionCreators } from "redux"
+
+        import styles from "./${1:className}.scss"
+
+
+
+        /**
+         * ${1:className}
+         */
+        export class ${1:className} extends Component {
+          constructor() {
+            super()
+            this.state = {}
+          }
+
+          static propTypes = {
+            // TODO
+          }
+
+          static defaultProps = {}
+
+
+          render() {
+            const props = {
+              className: styles.container,
+            }
+
+            return (
+              <div {...props}>
+                ${2:body}
+              </div>
+            )
+          }
+        }
+
+
+
+        const mapStateToProps = (state, props) => {
+          return {
+            ...props,
+          }
+        }
+
+
+        const mapDispatchToProps = (dispatch /*, props */ ) => {
+          return bindActionCreators({
+            // TODO
+          }, dispatch)
+        }
+
+
+        const mergeProps = (stateProps, dispatchProps, ownProps) => {
+          return {
+            ...stateProps,
+            ...dispatchProps,
+            ...ownProps,
+          }
+        }
+
+
+        export default connect(mapStateToProps, mapDispatchToProps, mergeProps)(${1:className})
+        """
+
+    'React-Redux with React-Router Class':
+        'prefix': 'reactreduxrouterclass'
+        'body': """
+        import React, { Component } from "react"
+        import PropTypes from "prop-types"
+        import { connect } from "react-redux"
+        import { bindActionCreators } from "redux"
+        import { withRouter } from "react-router-dom"
+
+        import styles from "./${1:className}.scss"
+
+
+
+        /**
+         * ${1:className}
+         */
+        export class ${1:className} extends Component {
+          constructor() {
+            super()
+            this.state = {}
+          }
+
+          static propTypes = {
+            // TODO
+
+
+            // Router Props
+            history: PropTypes.shape({
+              go: PropTypes.func.isRequired,
+              goBack: PropTypes.func.isRequired,
+              goForward: PropTypes.func.isRequired,
+              push: PropTypes.func.isRequired,
+              replace: PropTypes.func.isRequired,
+            }).isRequired,
+
+            match: PropTypes.shape({
+              isExact: PropTypes.bool.isRequired,
+              params: PropTypes.shape({}).isRequired,
+              path: PropTypes.string.isRequired,
+              url: PropTypes.string.isRequired,
+            }).isRequired,
+
+            location: PropTypes.shape({
+              hash: PropTypes.string.isRequired,
+              pathname: PropTypes.string.isRequired,
+              search: PropTypes.string.isRequired,
+              state: PropTypes.any,
+            }).isRequired,
+          }
+
+          static defaultProps = {}
+
+
+          render() {
+            const props = {
+              className: styles.container,
+            }
+
+            return (
+              <div {...props}>
+                {/* ${2:TODO} */}
+              </div>
+            )
+          }
+        }
+
+
+
+        const mapStateToProps = (state, props) => {
+          return {
+            ...props,
+          }
+        }
+
+
+        const mapDispatchToProps = (dispatch /*, props */ ) => {
+          return bindActionCreators({
+            // TODO
+          }, dispatch)
+        }
+
+
+        const mergeProps = (stateProps, dispatchProps, ownProps) => {
+          return {
+            ...stateProps,
+            ...dispatchProps,
+            ...ownProps,
+          }
+        }
+
+
+        export const ${1:className}Container = connect(mapStateToProps, mapDispatchToProps, mergeProps)(${1:className})
+
+        export default withRouter(${1:className}Container)
+        """
+
+    # ########################################### #
+    # ########################################### #
+
+
+# ################### #
+# ################### #
+
+
+
 
 # '.source.rust':
 #     'something':
 #         'prefix': 'something'
 #         'body': 'fn something(${1:"arg1"}) { println!("${2:"string"}"); }'
 
+
+
+# ############## #
+# LaTeX Snippets #
 '.text.tex.latex':
     'Screenplay Dialogue Block':
         'prefix': 'dialogue'
@@ -40,3 +422,6 @@
             ${2:body}
         \\\\end{dialogue}
         """
+
+# ############## #
+# ############## #

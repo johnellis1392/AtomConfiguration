@@ -40,10 +40,21 @@
       brace_style: "collapse-preserve-inline"
       end_with_comma: true
       end_with_newline: true
+      indent_size: 2
       jslint_happy: true
       space_after_anon_function: true
     json:
       beautify_on_save: true
+      end_with_newline: true
+      indent_size: 2
+      jslint_happy: true
+    jsx:
+      beautify_on_save: true
+      default_beautifier: "JS Beautify"
+      end_with_comma: true
+      end_with_newline: true
+      indent_size: 2
+      jslint_happy: true
     latex:
       always_look_for_split_brackets: true
     mustache:
@@ -61,9 +72,10 @@
     sass:
       beautify_on_save: true
     scss:
+      beautify_on_save: true
+      convert_quotes: "double"
       force_indentation: true
       indent_size: 2
-      preserve_newlines: true
     xml:
       beautify_on_save: true
       end_with_newline: true
@@ -111,6 +123,9 @@
       splitPane: "Right"
   "go-plus":
     panel: {}
+  "language-babel":
+    autoIndentJSX: true
+    disableWhenNoBabelrcFileInPath: false
   "linter-eslint":
     eslintrcPath: "~/.atom/package-configs/linter-eslint/.eslintrc.yml"
     fixOnSave: true
@@ -137,6 +152,10 @@
     notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
   "vim-mode-plus-ex-mode":
     notifiedUseExMode: true
+".babel.regexp.source":
+  editor:
+    tabLength: 2
+    tabType: "soft"
 ".c.source":
   editor:
     showInvisibles: true
@@ -147,6 +166,10 @@
 ".css.scss.source":
   editor:
     tabLength: 2
+".css.source.styled":
+  editor:
+    tabLength: 2
+    tabType: "soft"
 ".html.mustache.text":
   editor:
     tabLength: 2
@@ -154,9 +177,28 @@
   editor:
     showInvisibles: true
     tabLength: 2
+".js.jsx.source":
+  editor:
+    tabLength: 2
+    tabType: "soft"
+".js.regexp.replacement.source":
+  editor:
+    tabLength: 2
+".js.regexp.source":
+  editor:
+    tabLength: 2
 ".js.source":
   editor:
     showInvisibles: true
+    tabLength: 2
+".json.source":
+  editor:
+    tabLength: 2
+    tabType: "soft"
+".languagebabel.ttlextension":
+  editor:
+    tabLength: 2
+    tabType: "soft"
 ".ruby.source":
   editor:
     tabLength: 2
