@@ -208,6 +208,14 @@
 ".scala.source":
   editor:
     tabLength: 2
+".shell-session.text":
+  editor:
+    tabLength: 2
+    tabType: "soft"
+".shell.source":
+  editor:
+    tabLength: 2
+    tabType: "soft"
 ".source.yaml":
   editor:
     showInvisibles: false
