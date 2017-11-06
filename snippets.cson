@@ -87,29 +87,25 @@
     'ESLint-enabled console.log Statement':
         'prefix': 'consolelogeslint'
         'body': """
-        console.log(${1:/* TODO */}) // eslint-disable-line
-        ${2:}
+        console.log(${1:/* TODO */}) // eslint-disable-line${2:}
         """
 
     'ESLint-enabled console.warn Statement':
         'prefix': 'consolewarneslint'
         'body': """
-        console.warn(${1:/* TODO */}) // eslint-disable-line
-        ${2:}
+        console.warn(${1:/* TODO */}) // eslint-disable-line${2:}
         """
 
     'ESLint-enabled console.error Statement':
         'prefix': 'consoleerroreslint'
         'body': """
-        console.error(${1:/* TODO */}) // eslint-disable-line
-        ${2:}
+        console.error(${1:/* TODO */}) // eslint-disable-line${2:}
         """
 
     'ESLint-enabled console.clear Statement':
         'prefix': 'consolecleareslint'
         'body': """
-        console.clear() // eslint-disable-line
-        ${1:}
+        console.clear() // eslint-disable-line${1:}
         """
 
     # ######################### #
@@ -139,15 +135,17 @@
           }
 
           static propTypes = {
-            // TODO
+            className: PropTypes.string,
           }
 
-          static defaultProps = {}
+          static defaultProps = {
+            className: "",
+          }
 
 
           render() {
             const props = {
-              className: styles.container,
+              className: `${this.props.className} ${styles.container}`,
             }
 
             return (
@@ -183,7 +181,7 @@
           }
 
           static propTypes = {
-            // TODO
+            className: PropTypes.string,
 
 
             // Router Props
@@ -210,12 +208,14 @@
             }).isRequired,
           }
 
-          static defaultProps = {}
+          static defaultProps = {
+            className: "",
+          }
 
 
           render() {
             const props = {
-              className: styles.container,
+              className: `${this.props.className} ${styles.container}`,
             }
 
             return (
@@ -252,15 +252,17 @@
           }
 
           static propTypes = {
-            // TODO
+            className: PropTypes.string,
           }
 
-          static defaultProps = {}
+          static defaultProps = {
+            className: "",
+          }
 
 
           render() {
             const props = {
-              className: styles.container,
+              className: `${this.props.className} ${styles.container}`,
             }
 
             return (
@@ -321,8 +323,9 @@
             this.state = {}
           }
 
+
           static propTypes = {
-            // TODO
+            className: PropTypes.string,
 
 
             // Router Props
@@ -349,12 +352,14 @@
             }).isRequired,
           }
 
-          static defaultProps = {}
+          static defaultProps = {
+            className: "",
+          }
 
 
           render() {
             const props = {
-              className: styles.container,
+              className: `${this.props.className} ${styles.container}`,
             }
 
             return (

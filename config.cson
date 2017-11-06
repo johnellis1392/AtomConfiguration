@@ -36,7 +36,6 @@
       beautify_on_save: true
       configPath: "~/.atom/package-configs/atom-beautify/uncrustify.conf"
     js:
-      beautify_on_save: true
       brace_style: "collapse-preserve-inline"
       end_with_comma: true
       end_with_newline: true
