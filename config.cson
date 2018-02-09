@@ -83,6 +83,8 @@
       wrap_line_length: 100
     yaml:
       disabled: true
+  "autocomplete-ruby":
+    rsensePath: "/Users/jhelli/.rbenv/versions/2.5.0/bin/rsense"
   "autocomplete-xml": {}
   core:
     allowPendingPaneItems: false
@@ -133,6 +135,8 @@
   "linter-ui-default":
     panelHeight: 282
     showPanel: true
+  "markdown-writer":
+    fileExtension: "md"
   "platformio-ide-terminal":
     core:
       mapTerminalsTo: "Folder"
@@ -148,8 +152,7 @@
     alwaysOpenExisting: true
     autoReveal: true
     hideVcsIgnoredFiles: false
-  "vim-mode-plus":
-    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
+  "vim-mode-plus": {}
   "vim-mode-plus-ex-mode":
     notifiedUseExMode: true
 ".babel.regexp.source":

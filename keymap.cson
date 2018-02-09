@@ -88,6 +88,8 @@
   'cmd-[': 'editor:fold-current-row'
   'cmd-]': 'editor:unfold-current-row'
 
+  'cmd-shift-x': 'markdown-writer:toggle-strikethrough-text'
+
   # Remove conflicting commands
   'alt-h': 'unset!'
   'cmd-shift-g': 'unset!'
