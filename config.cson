@@ -129,9 +129,11 @@
     autoIndentJSX: true
     disableWhenNoBabelrcFileInPath: false
   "linter-eslint":
-    eslintrcPath: "~/.atom/package-configs/linter-eslint/.eslintrc.yml"
-    fixOnSave: true
-    useGlobalEslint: true
+    autofix:
+      fixOnSave: true
+    global:
+      eslintrcPath: "~/.atom/package-configs/linter-eslint/.eslintrc.yml"
+      useGlobalEslint: true
   "linter-ui-default":
     panelHeight: 282
     showPanel: true
