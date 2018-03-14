@@ -123,6 +123,8 @@
     general:
       splitPane: "Right"
   "go-plus":
+    autocomplete:
+      snippetMode: "nameAndType"
     format: {}
     panel: {}
   "language-babel":
@@ -175,6 +177,17 @@
   editor:
     tabLength: 2
     tabType: "soft"
+".go.source":
+  editor:
+    tabLength: 2
+    tabType: "hard"
+".gohtml.html.text":
+  editor:
+    tabLength: 2
+".gotemplate.source":
+  editor:
+    tabLength: 2
+    tabType: "auto"
 ".html.mustache.text":
   editor:
     tabLength: 2
