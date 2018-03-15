@@ -121,6 +121,12 @@
 'atom-text-editor.vim-mode-plus:not(.normal-mode)':
   'ctrl-[': 'vim-mode-plus:reset-normal-mode'
 
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  '[': 'unset!'
+  ']': 'unset!'
+  # '[': 'core:cancel'
+  # ']': 'core:cancel'
+
 'atom-text-editor.vim-mode-plus.normal-mode':
   'ctrl-p': 'line-jumper:move-up'
   'ctrl-n': 'line-jumper:move-down'

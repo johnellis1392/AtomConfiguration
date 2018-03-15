@@ -241,3 +241,9 @@
 ".text.todo":
   editor:
     autoIndent: false
+".text.xml":
+  editor:
+    tabLength: 2
+".text.xml.xsl":
+  editor:
+    tabLength: 2
