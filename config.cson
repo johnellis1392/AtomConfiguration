@@ -33,7 +33,6 @@
       end_with_newline: true
       indent_inner_html: true
     java:
-      beautify_on_save: true
       configPath: "~/.atom/package-configs/atom-beautify/uncrustify.conf"
     js:
       brace_style: "collapse-preserve-inline"
@@ -75,6 +74,9 @@
       convert_quotes: "double"
       force_indentation: true
       indent_size: 2
+    sql:
+      beautify_on_save: true
+      indent_size: 2
     xml:
       beautify_on_save: true
       end_with_newline: true
@@ -104,7 +106,7 @@
   "easy-motion-redux":
     replaceCharacters: "ABCDEFGHIKLMNOPQRSTUVWXYZ"
   editor:
-    fontSize: 12
+    fontSize: 13
     invisibles:
       cr: " "
       eol: " "
