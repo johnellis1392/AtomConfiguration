@@ -106,7 +106,7 @@
   "easy-motion-redux":
     replaceCharacters: "ABCDEFGHIKLMNOPQRSTUVWXYZ"
   editor:
-    fontSize: 13
+    fontSize: 9
     invisibles:
       cr: " "
       eol: " "
